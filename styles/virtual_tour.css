@@ -4,7 +4,11 @@
     margin: 0 auto;
     padding: 75px 75px 0;
 }
-
+.virtual_img {
+    object-fit: contain;
+    width: 550px;
+    height: 350px;
+}
 .tour__text {
     width: 165px;
     height: 26px;

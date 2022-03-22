@@ -5,6 +5,10 @@
     height: 60%;
 }
 
+.welcome-bg {
+    background: #030303 url("../image/back.jpg") no-repeat center right;
+}
+
 .welcome__title {
     font-style: normal;
     font-weight: normal;
