@@ -1,0 +1,120 @@
+.header {
+    background: #030303;
+    padding: 20px 0 25px;
+    height: 200px;
+}
+
+.header__navigation-list {
+    display: flex;
+}
+
+.header__nav {
+    background-color: #030303;
+    z-index: 2;
+}
+
+.header__navigation-list li {
+    color: white;
+    list-style: none;
+    display: flex;
+}
+
+.header__logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.header__logo-font {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.header__content-font {
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.header_container {
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 75px 0 75px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_container a {
+    margin: 65px 5px 65px 71px;
+    color: white;
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+    .header {
+        height: 100px;
+    }
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .burger {
+        display: flex;
+        width: 35px;
+        height: 35px;
+    }
+
+    .header__logo {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .header__logo img {
+        padding-top: 5px;
+    }
+
+    /*меню бургер*/
+    .header__navigation-list li {
+        width: 100%;
+        display: block;
+    }
+
+    .header__navigation-list a {
+        display: block;
+    }
+
+    .header__navigation-list {
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: white;
+        position: relative;
+        top: 10px;
+        right: 30px;
+    }
+
+    /*скрыть меню*/
+    .header__navigation-list {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .header_container {
+        padding: 10px;
+        margin: 0 auto;
+    }
+}
